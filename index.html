@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav>
+    <h1>Student Details</h1>
+</nav>
+    <div class="table">
+       <table id="class">
+        <tr class="head">
+            <th>Sudent Name</th>
+            <th>Age</th>
+            <th>Date</th>
+            <th>District</th>
+            <th>State</th>
+            <th></th>
+        </tr>
+        <tr>
+            <td>Yuvaraj</td>
+            <td>21</td>
+            <td>2003-07-11</td>
+            <td>Chengalpet</td>
+            <td>Tamil Nadu</td>
+            <td><button onclick="remove(event)">Delete</button></td>
+        </tr>
+       </table>
+    </div>
+
+    <div class="overlay"></div>
+    <div class="form">
+        <form action="">
+            <input type="text" id="name" placeholder="Enter Name" required>
+            <input type="number" id="age" placeholder="Enter Age" required>
+            <input type="date" id="date" required>
+            <input type="text" id="districk" placeholder="Enter District" required>
+            <input type="text" id="State" placeholder="Enter State" required>
+            <button  id="add">ADD</button>
+            <button id="cancel">CANCEL</button>
+        </form>
+    </div>
+
+    <div class="popupbutton">+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
